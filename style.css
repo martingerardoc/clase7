@@ -1,0 +1,67 @@
+.body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+.header{
+    background-color: red;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.main{
+    background-color: blue;
+    color: white;
+}
+.aside{
+    background-color: orange;
+    color: white;
+}
+.footer{
+    background-color: yellow;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.container-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.card{
+    background-color: yellow;
+    text-align: center;
+}
+.card h2{
+    margin: 0%;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.cajita{
+    background-color: red;
+}
+.mas-grande{
+    grid-column-start:2 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    color: blue;
+    font-size: 2em;
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    /* estilos para pantallas con un ancho entre 600px y 800px */
+    .container-card{
+        grid-template-columns: 1fr 1fr;
+       }        
+}
+@media (min-width: 769px) {
+    /* estilos para pantallas con un ancho de al menos 600px */
+   .container-card{
+    grid-template-columns: 1fr 1fr 1fr;
+   }     
+}
